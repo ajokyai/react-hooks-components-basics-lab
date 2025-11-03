@@ -1,9 +1,10 @@
 import React from "react";
 
-function NavBar() {
+// Already defined in the lab
+function Navbar() {
   return (
     <nav>
-      <a href="#home">I'm a link!</a>
+      <h1>My Portfolio</h1>
     </nav>
   );
 }
@@ -11,20 +12,27 @@ function NavBar() {
 function Home() {
   return (
     <div id="home">
-      <h1>Home</h1>
+      <h2>Home</h2>
     </div>
   );
 }
 
-{/* write an <About> component here */}
+// ✅ Step 1: Create the About component
+function About() {
+  return (
+    <div id="about">
+      <h2>About</h2>
+    </div>
+  );
+}
 
-
+// ✅ Step 2: Add Navbar, Home, and About inside App
 function App() {
   return (
     <div>
-      <NavBar />
-      {/* add the <Home> component here */}
-      {/* add your <About> component here */}
+      <Navbar />
+      <Home />
+      <About />
     </div>
   );
 }
